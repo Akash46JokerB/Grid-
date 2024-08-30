@@ -1,0 +1,142 @@
+ <!DOCTYPE html>
+<html>
+<head> 
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body{
+            padding: 50px 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .row{
+            height: 50px;   
+            width: 100%;
+            display: flex;
+            gap: 20px   ;
+            /* display: grid;
+            grid-template-columns: repeat(12,1fr);
+            gap: 20px;   */
+            /* grid-template-rows: 12; */
+        }
+        .col-6,.col-4,.col-2,.col-1,.col-3,.col{
+            width: 100%;
+            height: 100%;
+        }
+        .col-6{
+            grid-column: 6;
+        }
+        .col-4{
+            column-span: 4;
+        }
+
+        .green{
+            background-color: greenyellow;
+        }
+        .blue{
+            background-color: aqua;
+        }
+        .violet{
+            background-color: purple;
+        }
+        .orange{
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col-6 green"></div>
+        <div class="col-6 green"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-4 blue"></div>
+        <div class="col-4 blue"></div>
+        <div class="col-4 blue"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-2 violet"></div>
+        <div class="col-2 violet"></div>
+        <div class="col-2 violet"></div>
+        <div class="col-2 violet"></div>
+        <div class="col-2 violet"></div>
+        <div class="col-2 violet"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-2 orange"></div>
+        <div class="col-2 orange"></div>
+        <div class="col-2 orange"></div>
+        <div class="col-2 orange"></div>
+        <div class="col-2 orange"></div>
+        <div class="col-2 orange"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-4 green"></div>
+        <div class="col-4 green"></div>
+        <div class="col-4 green"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-6 blue"></div>
+        <div class="col-6 blue"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-4 violet"></div>
+        <div class="col-4 violet"></div>
+        <div class="col-4 violet"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-4 orange"></div>
+        <div class="col-4 orange"></div>
+        <div class="col-4 orange"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-6 green"></div>
+        <div class="col-6 green"></div>
+    </div>
+</body>
+</html> 
+
+  <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row{
+            height: 50px;
+            width: 100%;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(12,1fr);
+        }
+        .col-6{
+            -ms-grid-row-span: 6;
+            height: 100%;
+            width: 100%;
+        }
+        .green{
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col-6 green"></div>
+        <div class="col-6 green"></div>
+    </div>
+</body>
+</html>  
